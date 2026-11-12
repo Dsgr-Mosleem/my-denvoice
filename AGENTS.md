@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- GitHub Pages build is gated by `GITHUB_PAGES=true` in vite.config.ts (static SPA, base /my-denvoice/, no nitro); keep the default branch of the config untouched so Lovable publishing keeps working.
