@@ -7,7 +7,7 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GITHUB_PAGES=true builds a static SPA under /my-denvoice/ (see .github/workflows/deploy.yml).
-const isGithubPages = process.env.GITHUB_PAGES === "true";
+const isGithubPages = process.env["GITHUB_PAGES"] === "true";
 
 export default defineConfig(
   isGithubPages
