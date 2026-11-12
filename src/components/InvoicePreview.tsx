@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import logo from "@/assets/logo.png.asset.json";
+import logoUrl from "@/assets/logo.png";
 import { BRAND, lineTotal, rupiah, subtotal, total, type Invoice } from "@/lib/invoice";
 
 export const InvoicePreview = forwardRef<HTMLDivElement, { inv: Invoice }>(({ inv }, ref) => {
@@ -12,7 +12,7 @@ export const InvoicePreview = forwardRef<HTMLDivElement, { inv: Invoice }>(({ in
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
             <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-primary-foreground">
-              <img src={logo.url} alt="logo" crossOrigin="anonymous" className="h-[78%] w-[78%] object-contain" />
+              <img src={logoUrl} alt="logo" crossOrigin="anonymous" className="h-[78%] w-[78%] object-contain" />
             </div>
             <div className="leading-none">
               <div className="font-display text-3xl tracking-wide">DESIGNER</div>

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Download, MessageCircle, Plus, Save, Search, Trash2, FilePlus2 } from "lucide-react";
-import logo from "@/assets/logo.png.asset.json";
+import logoUrl from "@/assets/logo.png";
 import { InvoicePreview } from "@/components/InvoicePreview";
 import { nextNumber, rupiah, total, waMessage, waPhone, type Invoice, type Item } from "@/lib/invoice";
 
@@ -78,7 +78,7 @@ function App() {
       <header className="bg-brand text-primary-foreground">
         <div className="mx-auto flex max-w-[1500px] items-center gap-3 px-6 py-4">
           <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary-foreground">
-            <img src={logo.url} alt="DESIGNER_MOSLEEM" className="h-[76%] w-[76%] object-contain" />
+            <img src={logoUrl} alt="DESIGNER_MOSLEEM" className="h-[76%] w-[76%] object-contain" />
           </div>
           <div className="leading-none">
             <div className="font-display text-2xl tracking-wide">DESIGNER MOSLEEM</div>
