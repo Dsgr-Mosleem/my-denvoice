@@ -77,7 +77,9 @@ function App() {
     <div className="min-h-screen">
       <header className="bg-brand text-primary-foreground">
         <div className="mx-auto flex max-w-[1500px] items-center gap-3 px-6 py-4">
-          <img src={logo.url} alt="DESIGNER_MOSLEEM" className="h-10 w-10 rounded-lg bg-primary-foreground object-contain p-1" />
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary-foreground">
+            <img src={logo.url} alt="DESIGNER_MOSLEEM" className="h-[76%] w-[76%] object-contain" />
+          </div>
           <div className="leading-none">
             <div className="font-display text-2xl tracking-wide">DESIGNER MOSLEEM</div>
             <div className="text-xs opacity-80">Invoice Generator</div>
